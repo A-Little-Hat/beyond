@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--black-075);
+}

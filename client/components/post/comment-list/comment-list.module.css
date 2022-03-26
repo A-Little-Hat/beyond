@@ -1,0 +1,43 @@
+.commentCell {
+  width: auto;
+  padding-left: 8px;
+  vertical-align: top;
+  grid-column: 2;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--m) {
+    padding-left: 16px;
+  }
+}
+
+.animation {
+  div {
+    animation: background-fade 3s ease-in-out;
+  }
+}
+
+@keyframes background-fade {
+  0% {
+    background-color: var(--yellow);
+  }
+  100% {
+    opacity: transparent;
+  }
+}
+
+.addComment {
+  color: var(--black-400);
+  opacity: 0.6;
+  padding: 0 3px 2px 3px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.showMore {
+  width: 175px;
+  padding: 0 3px 2px 3px;
+  margin-top: 10px;
+}

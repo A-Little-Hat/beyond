@@ -1,0 +1,35 @@
+.layout {
+  background-color: var(--black-050);
+  min-height: 100vh;
+}
+
+.container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 950px;
+}
+
+.topForm {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: var(--fade);
+
+  @media (--m) {
+    height: 130px;
+    background-image: url('http://localhost:3000/images/background.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding-left: 16px;
+
+    @media (--m) {
+      font-size: 27px;
+    }
+  }
+}

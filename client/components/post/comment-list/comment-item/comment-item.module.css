@@ -1,0 +1,32 @@
+.commentContainer {
+  padding: 6px;
+  border-bottom: 1px solid var(--black-050);
+  display: inline-block;
+
+  p {
+    display: inline;
+    word-break: break-word;
+  }
+
+  &:first-child {
+    border-top: 1px solid var(--black-050);
+  }
+}
+
+.owner {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background-color: var(--powder-100);
+}
+
+.dateText {
+  color: var(--black-350);
+}
+
+.delete {
+  color: var(--red-400);
+
+  &:hover {
+    color: var(--red-500);
+  }
+}

@@ -1,0 +1,67 @@
+.postCell {
+  width: auto;
+  padding-right: 16px;
+  vertical-align: top;
+  grid-column: 2;
+}
+
+.text {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tagContainer {
+  flex: 1 auto;
+  margin-bottom: 8px;
+}
+
+.userDetails {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 12px;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 1px;
+  }
+
+  span {
+    color: var(--black-400);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}
+
+.delete {
+  color: var(--red-400);
+
+  &:hover {
+    color: var(--red-500);
+  }
+}

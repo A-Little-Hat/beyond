@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid var(--black-100);
+  border-radius: 3px;
+  background-color: var(--white);
+
+  .header {
+    margin-bottom: 12px;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--black-500);
+  }
+}

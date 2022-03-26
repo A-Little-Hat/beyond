@@ -1,0 +1,60 @@
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 13, 14, 0.5);
+  animation: modal 0.3s ease;
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalDialog {
+  position: relative;
+  z-index: 9001;
+  max-width: 600px;
+  min-width: 292px;
+  max-height: 100%;
+  padding: 50px;
+  border-radius: 7px;
+  background-color: var(--white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09), 0 3px 8px rgba(0, 0, 0, 0.09),
+    0 4px 13px rgba(0, 0, 0, 0.13);
+  animation: modalDialog 0.5s ease;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 7px;
+
+  svg {
+    font-size: 20px;
+  }
+}
+
+@keyframes modalDialog {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

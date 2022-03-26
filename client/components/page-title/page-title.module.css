@@ -1,0 +1,39 @@
+.container {
+  padding: 24px 12px 24px 24px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--black-100);
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  word-break: break-word;
+
+  h1 {
+    font-size: 27px;
+    max-width: 950px;
+  }
+}
+
+.summary {
+  margin-top: 20px;
+  font-size: 15px;
+  max-width: 630px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: fit-content;
+
+  button {
+    flex-shrink: 0;
+    @media (max-width: 1200px) {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+}
+
+.tagContainer {
+  position: sticky;
+  top: 74px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+
+  h2 {
+    color: var(--black-700);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+}
+
+.popularTags {
+  display: grid;
+  grid-template-columns: auto auto;
+}

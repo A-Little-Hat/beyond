@@ -1,0 +1,15 @@
+{
+  "name": "boyond",
+  "version": "1.0.0",
+  "description": "A question answer website",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run start",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "Soumyaneel Sarkar",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

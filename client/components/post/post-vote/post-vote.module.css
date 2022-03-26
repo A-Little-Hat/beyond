@@ -1,0 +1,34 @@
+.voteCell {
+  width: auto;
+  padding-right: 16px;
+  vertical-align: top;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.voteButton {
+  margin: 2px;
+  &:hover {
+    background-color: transparent;
+  }
+  
+  svg {
+    color: var(--black-200);
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.voted {
+  color: var(--orange) !important;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  margin: 2px;
+  color: var(--black-500)
+}

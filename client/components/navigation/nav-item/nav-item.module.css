@@ -1,0 +1,32 @@
+.navItem {
+  color: var(--black-600);
+  padding: 8px 6px 8px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: var(--fade);
+  text-decoration: none;
+  line-height: 1.5;
+
+  &:hover {
+    color: var(--black-900);
+  }
+  span {
+    margin-left: 20px;
+  }
+  svg {
+    font-size: 13px;
+
+    & + * {
+      margin-left: 7px;
+    }
+  }
+}
+
+.navItemSelected {
+  font-weight: bold;
+  background: var(--black-050);
+  color: var(--black-900);
+  border-right: 3px solid var(--orange);
+}
