@@ -18,10 +18,11 @@ const Navigation = () => {
         }
       >
         <World />
-        <span>Stack Overflow</span>
+        <span>Questions</span>
       </NavItem>
 
       <NavItem href="/tags" selected={router.pathname == '/tags'}>
+        <img src="" alt="Tags" />
         <span>Tags</span>
       </NavItem>
 
