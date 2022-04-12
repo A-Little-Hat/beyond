@@ -44,7 +44,9 @@ const Header = ({ className, ...props }) => {
           </Button>
         </div>
         <Button className={styles.logo} href="/">
-          <Logo />
+          <img src="/images/logop.png" style={{
+            height: '100%',
+          }} alt="Beyond" />
           <p>
             <span>Beyond</span>
           </p>

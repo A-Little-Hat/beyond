@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run dev",
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#000=currentColor\""
   },
   "author": "Soumyaneel Sarkar",
