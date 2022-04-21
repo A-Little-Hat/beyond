@@ -10,7 +10,7 @@ import { AuthContext } from '../../../store/auth'
 
 import Button from '../../button'
 import NavigationDropdown from '../../navigation-dropdown'
-import { Menu, Close, Logo } from '../../icons'
+import { Menu, Close } from '../../icons'
 
 import styles from './header.module.css'
 
