@@ -4,8 +4,9 @@
   "description": "client side app using NextJs",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
+    "prod": "next start",
     "start": "npm run dev",
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#000=currentColor\""
   },
@@ -18,11 +19,13 @@
     "date-fns": "^2.15.0",
     "formik": "^2.1.5",
     "next": "^9.4.4",
+    "next-pwa": "^5.5.2",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-tagsinput": "^3.19.0",
     "slug": "^3.3.2",
+    "sweetalert": "^2.1.2",
     "yup": "^0.29.3"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import cn from 'classnames'
-
+import swal from 'sweetalert';
 import { AuthContext } from '../../store/auth'
 
 import Button from '../button'
@@ -31,11 +31,21 @@ const PageTitle = ({ title, button, borderBottom = true, children }) => {
               maxHeight: '40px',
             }}
             onClick={() => {
-              // copy url to clipboard and send a alert
-              const url = window.location.href
-              navigator.clipboard.writeText(url)
-              alert(`Copied to clipboard: ${url}`)
-            }}
+              //if navigator.share is available then share the url or copy to clipboard
+              if (navigator.share) {
+                navigator.share({
+                  title: title,
+                  url: window.location.href,
+                })
+                navigator.clipboard.writeText(window.location.href)
+              } else {
+                navigator.clipboard.writeText(window.location.href)
+                // alert('Copied to clipboard')
+                swal({
+                  icon: "success",
+                  text: "Copied to clipboard",
+                });
+              }}}
             >
               <img src="/images/copy.svg" alt="copy" height="100%" />
             </Button>

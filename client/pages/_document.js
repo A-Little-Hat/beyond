@@ -17,6 +17,9 @@ class MyDocument extends Document {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
           <meta name="description" content={SiteConfig.description} />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="icon.png" />
+          <meta name="theme-color" content="#fff" />
 
           {/* facebook */}
           <meta property="og:url" content={SiteConfig.siteUrl} />

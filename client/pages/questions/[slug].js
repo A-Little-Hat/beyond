@@ -47,7 +47,7 @@ const QuestionDetail = ({ questionId, title }) => {
     <Layout extra={false}>
       <Head>
         <title>{title}</title>
-        <link rel="canonical" href={isClient && window.location.href}></link>
+        {/* <link rel="canonical" href={isClient && window.location.href}></link> */}
       </Head>
 
       <PageTitle title={title} button />

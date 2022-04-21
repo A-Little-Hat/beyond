@@ -43,12 +43,15 @@ const Header = ({ className, ...props }) => {
             {isComponentVisible ? <Close /> : <Menu />}
           </Button>
         </div>
-        <Button className={styles.logo} href="/">
-          <img src="/images/logop.png" style={{
+        <Button className={styles.logo} styles={{
+          marginRight: '5px',
+        }} href="/">
+          <img src="/l2.png" style={{
             height: '100%',
+            padding: '1.5px'
           }} alt="Beyond" />
           <p>
-            <span>Beyond</span>
+            {/* <span>Beyond</span> */}
           </p>
         </Button>
         <div style={{ flex: 1 }}></div>
