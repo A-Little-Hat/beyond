@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react'
 import Link from 'next/link'
 import cn from 'classnames'
+import swal from 'sweetalert';
 
 import useComponentVisible from '../../../hooks/useComponentVisible'
 import useWindowSize from '../../../hooks/useWindowSize'
@@ -67,7 +68,13 @@ const Header = ({ className, ...props }) => {
                 <a>{authState.userInfo.username}!</a>
               </Link>
             </p>
-            <a onClick={() => logout()}>log out</a>
+            <a onClick={() => {
+              logout();
+              swal({
+                icon: "success",
+                text: "Logged out successfully!",
+              });
+            }}>log out</a>
           </div>
         ) : (
           <>

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
+import swal from 'sweetalert';
 
 import { publicFetch } from '../../../util/fetcher'
 import { AuthContext } from '../../../store/auth'
@@ -28,6 +29,10 @@ const SignupForm = () => {
           setAuthState({ token, expiresAt, userInfo })
           resetForm({})
           setIsComponentVisible(false)
+          swal({
+            icon: "success",
+            text: "Signed up successfully!",
+          });
         } catch (error) {
           setStatus(error.response.data.message)
         }
