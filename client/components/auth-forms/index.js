@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 
-import { Logo } from '../icons'
+// import { Logo } from '../icons'
 import LoginForm from './login-form'
 import SignUpForm from './signup-form'
 
@@ -16,7 +16,8 @@ const AuthForms = ({ screen = 'signup' }) => {
         <title>{form == 'login' ? 'Log In' : 'Sign Up'} -  Beyond</title>
       </Head>
 
-      <Logo className={styles.logo} />
+      {/* <Logo className={styles.logo} /> */}
+      <img src="/l2.png" className={styles.logo} />
 
       {form === 'login' ? <LoginForm /> : <SignUpForm />}
 
