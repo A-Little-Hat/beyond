@@ -32,10 +32,20 @@ const Navigation = () => {
         href="/users"
         selected={router.pathname.split('/')[1] == 'users'}
       >
-        <img src="https://www.svgrepo.com/show/90056/magnifying-glass.svg" alt="Users" 
+        <img src="https://www.svgrepo.com/show/125995/multiple-users-silhouette.svg" alt="Users" 
           width="18px" height="18px"
         />
         <span>Users</span>
+      </NavItem>
+
+      <NavItem
+        href="/search"
+        selected={router.pathname.split('/')[1] == 'search'}
+      >
+        <img src="https://www.svgrepo.com/show/90056/magnifying-glass.svg" alt="Search" 
+          width="18px" height="18px"
+        />
+        <span>Search</span>
       </NavItem>
     </nav>
   )

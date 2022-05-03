@@ -18,7 +18,7 @@ const PageTitle = ({ title, button, borderBottom = true, children }) => {
     } else {
       setShowButt(false)
     }
-  }, showButt)
+  })
   
   return (
     <div className={cn(styles.container, borderBottom && styles.borderBottom)}>

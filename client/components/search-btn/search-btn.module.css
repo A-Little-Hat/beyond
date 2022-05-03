@@ -1,0 +1,28 @@
+.buttonContainer {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    min-width: fit-content;
+    margin-bottom: 10px;
+  
+    input{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--underline);
+      padding: 0.8em;
+      margin-left: 5px;
+      font-size: 1.2em;
+      color: var(--black-500);
+      /* background-color: var(--white); */
+      background-color: var(--white);
+      outline: none;
+      border-radius: 5px;
+    }
+    button {
+      flex-shrink: 0;
+      margin-left: 10px;
+      @media (max-width: 1200px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
