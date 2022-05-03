@@ -17,7 +17,7 @@ const SearchBtn = ({ setSearch }) => {
                 }
             }
         }/>
-        <Button onClick={(e)=>{
+        <Button onClick={()=>{
             setSearch(keyword);
             setKeyword('');
         }} >Search</Button>

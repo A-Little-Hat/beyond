@@ -17,7 +17,9 @@ const AuthForms = ({ screen = 'signup' }) => {
       </Head>
 
       {/* <Logo className={styles.logo} /> */}
-      <img src="/l2.png" className={styles.logo} />
+      <img src="/l2.png" className={styles.logo} style={{
+        width: '100%',
+      }} />
 
       {form === 'login' ? <LoginForm /> : <SignUpForm />}
 

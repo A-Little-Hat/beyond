@@ -23,7 +23,7 @@ const search = () => {
   const fetchQuestion = async () => {
     const { data } = await publicFetch.get('/question')
     let result = []
-    data.map((e,id)=>{
+    data.map((e)=>{
     if(e.title.toString().toLowerCase().includes(search.toString().toLowerCase()) || e.text.toString().toLowerCase().includes(search.toString().toLowerCase())){
       result=[...result,e]
     }

@@ -3,7 +3,7 @@
     "short_name": "Beyond",
     "theme_color": "#b6dcf5",
     "background_color": "#fffffd",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "icons": [
@@ -26,6 +26,12 @@
             "src": "/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "splash_pages": null
